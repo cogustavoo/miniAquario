@@ -29,6 +29,7 @@ fun main (){
     println("-----")
     println("all: ${lazyMap.toList()}")
 
+    // filtrando a lista e acessando apenas os elementos que contem o filtro
     val lazyMap2 = decorations.asSequence().filter { it[0] == 'p' }.map {
         println("acess: $it")
         it
