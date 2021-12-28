@@ -1,9 +1,7 @@
 package example.myapp
-
-class Aquarium {
-    var width: Int = 20
-    var height: Int = 40
-    var length: Int = 100
+// criando uma class com constructor  voce pode definir argunmentos e pegar argumentos default
+// ou criar aquarios com sizes diferentes
+class Aquarium(var length: Int = 100, var width: Int = 20, var height: Int = 40) {
 
     fun printSize() {
         println("width: $width cm " +
